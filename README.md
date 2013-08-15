@@ -10,7 +10,7 @@ new RNG is futur proof !
 
 First download my certificate, and trust it:
 
-`gem cert --add <(curl -kL https://raw.github.com/Mayeu/SecureYOLORNG/gem-public_cert.pem)
+`gem cert --add <(curl -kL https://raw.github.com/Mayeu/SecureYOLORNG/master/gem-public_cert.pem)`
 
 Then:
 
