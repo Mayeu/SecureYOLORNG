@@ -1,0 +1,19 @@
+#! /usr/bin/env ruby
+
+require 'trollop'
+
+require_relative '../lib/syolorng.rb'
+
+opts = Trollop::options do
+  version "syolorng v2.0"
+  banner <<-EOS
+An implementation of the SecureYOLORNG algorithm.
+
+Usage:
+  syolorng [option]
+EOS
+
+  opt :max, "Set the maximum value (exclusive)", :type => Integer
+end
+
+puts SecureYOLORNG.rand(opts[:max])
