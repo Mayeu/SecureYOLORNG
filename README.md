@@ -10,17 +10,17 @@ new RNG is futur proof !
 
 First download my certificate, and trust it:
 
-`gem cert --add <(curl -kL https://raw.github.com/Mayeu/SecureYOLORNG/master/gem-public_cert.pem)`
+    gem cert --add <(curl -kL https://raw.github.com/Mayeu/SecureYOLORNG/master/gem-public_cert.pem)
 
 Then:
 
-`gem install syolorng -P HighSecurity`
+    gem install syolorng -P HighSecurity
 
 ##Usage
 
 From your shell your can simply type:
 
-`syolorng`
+    $ syolorng
 
 You can also use it as a lib:
 
