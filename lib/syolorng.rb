@@ -14,8 +14,8 @@ class SecureYOLORNG
   #
   # Arguments:
   #   max: (Integer)
-  
-  def self.rand(max=nil)
+
+  def self.rand(max = nil)
     case max
     when nil
       random
@@ -27,6 +27,6 @@ class SecureYOLORNG
   private
 
   def self.random
-    Digest::SHA512.hexdigest(DateTime::now.to_s).to_i(16)
+    Digest::SHA512.hexdigest(DateTime.now.to_s).to_i(16)
   end
 end
